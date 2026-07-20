@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start:api": "node server/index.js",
+    "dev:api": "node server/index.js",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -13,6 +15,8 @@
     "@reduxjs/toolkit": "^2.12.0",
     "@tanstack/react-query": "^5.101.2",
     "axios": "^1.18.1",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
     "lucide-react": "^1.24.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
