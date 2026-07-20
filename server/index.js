@@ -27,4 +27,11 @@ app.get('/api/leads', (req, res) => {
   return res.json(leads);
 });
 
+// Contact form (dummy)
+app.post('/api/contact', (req, res) => {
+  const { name, email, company, message } = req.body;
+  // In a real app you'd persist or send an email. Here we just echo back.
+  return res.json({ ok: true, received: { name, email, company, message } });
+});
+
 app.listen(port, () => console.log(`Dummy API listening on http://localhost:${port}`));
